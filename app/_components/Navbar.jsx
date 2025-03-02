@@ -36,11 +36,7 @@ export default function Navbar() {
       </motion.div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex space-x-6">
-        <NavItem href="#" icon={<Home size={20} />} label="Home" />
-        <NavItem href="#about" icon={<User size={20} />} label="About" />
-        <NavItem href="#projects" icon={<Briefcase size={20} />} label="Projects" />
-      </div>
+      
 
       {/* Auth Buttons */}
       <div className="hidden md:flex items-center space-x-4">
@@ -70,9 +66,7 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="absolute top-14 left-1/2 transform -translate-x-1/2 bg-opacity-30 backdrop-blur-lg shadow-lg border bg-black border-blue-500/50 rounded-lg px-6 py-4 flex flex-col space-y-4 text-center w-[80%] max-w-xs"
         >
-          <NavItem href="#" icon={<Home size={20} />} label="Home" onClick={() => setIsOpen(false)} />
-          <NavItem href="#about" icon={<User size={20} />} label="About" onClick={() => setIsOpen(false)} />
-          <NavItem href="#projects" icon={<Briefcase size={20} />} label="Projects" onClick={() => setIsOpen(false)} />
+         
           
           {/* Mobile Auth Buttons */}
           <div className="mt-4">
