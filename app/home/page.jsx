@@ -173,7 +173,18 @@ export default function Home() {
             )}
           </motion.ul>
         )}
-       
+        <div className="mt-4 flex justify-center">
+         
+          <SignOutButton signOutOptions={{ redirectTo: "/" }}>
+            <motion.button
+            data-tooltip-id="global-tooltip" data-tooltip-content="Sign Out"
+              whileTap={{ scale: 0.9 }}
+              className="px-4 py-2 bg-red-500 rounded-xl hover:bg-red-700 transition cursor-pointer"
+            >
+              Sign Out
+            </motion.button>
+          </SignOutButton>
+        </div>
       </motion.div>
     </div>
   );
